@@ -1,0 +1,85 @@
+﻿<Window x:Class="StudentManagerApplication.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:StudentManagerApplication.ViewModel"
+        Title="Student List" Height="400" Width="850">
+
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Add Student"
+        Width="120"
+        Height="30"
+        Margin="10"
+        HorizontalAlignment="Left"
+        Command="{Binding Add}"
+        Grid.Row="0"/>
+        
+        <DataGrid ItemsSource="{Binding Students}"
+          AutoGenerateColumns="False"
+          Margin="10" Grid.Row="1">
+
+            <DataGrid.Columns>
+
+                <DataGridTemplateColumn Header="Image">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding ImagePath}" Height="40"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Name"
+Binding="{Binding Name}"/>
+
+                <DataGridTextColumn Header="Age"
+Binding="{Binding Age}"/>
+
+                <DataGridTextColumn Header="Stream"
+Binding="{Binding Stream}"/>
+
+                <DataGridTextColumn Header="Date Of Joining"
+    Binding="{Binding JoiningDate, StringFormat={}{0:dd MMM yyyy}}"/>
+
+                <DataGridTextColumn Header="Due Fee"
+Binding="{Binding DueFee,StringFormat='{}{0} Rs'}"/>
+
+                <DataGridTextColumn Header="Total Fee"
+Binding="{Binding TotalFee,StringFormat='{}{0} Rs'}"/>
+
+                <DataGridTemplateColumn Header="Edit">
+
+                    <DataGridTemplateColumn.CellTemplate>
+
+                        <DataTemplate>
+
+                            <Button Width="30"
+Command="{Binding DataContext.EditStudent,
+RelativeSource={RelativeSource AncestorType=DataGrid}}"
+CommandParameter="{Binding}">
+
+                                <TextBlock FontFamily="Segoe MDL2 Assets"
+Text="&#xE70F;"
+FontSize="16"/>
+
+                            </Button>
+
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+    </Grid>
+</Window>

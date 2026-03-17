@@ -1,0 +1,15 @@
+F:\StudentManagerApplication\StudentManagerApplication\bin\Debug\StudentManagerApplication.exe
+F:\StudentManagerApplication\StudentManagerApplication\bin\Debug\StudentManagerApplication.pdb
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\Views\EditStudentWindow.baml
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\Views\EditStudentWindow.g.cs
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\Views\MainWindow.g.cs
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\App.g.cs
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\StudentManagerApplication_MarkupCompile.cache
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\StudentManagerApplication_MarkupCompile.lref
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\Views\MainWindow.baml
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\StudentManagerApplication.g.resources
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\StudentManagerApplication.Properties.Resources.resources
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\StudentManagerApplication.csproj.GenerateResource.Cache
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\StudentManagerApplication.exe
+F:\StudentManagerApplication\StudentManagerApplication\obj\x86\Debug\StudentManagerApplication.pdb
